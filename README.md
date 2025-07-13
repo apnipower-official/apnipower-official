@@ -1,8 +1,6 @@
 <div align="center">
   <h1>👋 Hello, I'm Haleem Sadia! 🧪</h1>
   <h3>MLT Student | Qarshi University | Passionate About Medical Science & Diagnostics</h3>
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzdmcjQ1eGRrN2Y0M3RhdTlkdDJybnB4eTdhNDF6cnh6Mm84djQ2byZlcD12MV9naWZzX3NlYXJjaCZjdD1n/UoLt6dM2Z3fGE/giphy.gif" alt="Lab Work GIF" width="300" style="border-radius: 15px;" />
-</div>
 
 ---
 

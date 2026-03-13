@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ApniPower Lab Reference</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="logo">🧪 ApniPower Lab</div>
+      <p class="tagline">Medical Lab Test Reference for MLT Students</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- Search & Filter -->
+    <section class="controls">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search by test name or category…"
+        aria-label="Search lab tests"
+      />
+      <select id="categoryFilter" aria-label="Filter by category">
+        <option value="">All Categories</option>
+        <option value="Hematology">Hematology</option>
+        <option value="Clinical Chemistry">Clinical Chemistry</option>
+        <option value="Microbiology">Microbiology</option>
+        <option value="Urinalysis">Urinalysis</option>
+        <option value="Immunology">Immunology</option>
+      </select>
+    </section>
+
+    <!-- Stats bar -->
+    <section class="stats-bar">
+      <span id="resultCount">Loading…</span>
+    </section>
+
+    <!-- Cards grid -->
+    <section class="cards-grid" id="cardsGrid" aria-live="polite">
+      <!-- Cards injected by app.js -->
+    </section>
+
+    <!-- Empty state -->
+    <div class="empty-state hidden" id="emptyState">
+      <span>🔬</span>
+      <p>No tests found. Try a different search term or category.</p>
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal-overlay hidden" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+      <h2 id="modalTitle"></h2>
+      <span class="modal-category" id="modalCategory"></span>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Built for 🧬 MLT Students <span class="footer-sep">|</span> Haleem Sadia <span class="footer-sep">|</span> Qarshi University</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
